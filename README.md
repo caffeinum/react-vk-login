@@ -4,6 +4,10 @@ The code was adapted from https://github.com/appigram/react-vk-login.
 
 It's updated for the last React version.
 
+Also, see this: https://github.com/mmarkelov/react-vk
+
+## Use
+
 ```sh
 npm i react-vk-login-button
 ```

@@ -1,8 +1,8 @@
 {
   "name": "react-vk-login-button",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React VK Login button",
-  "main": "./src/index.js",
+  "main": "./lib",
   "repository": "https://github.com/caffeinum/react-vk-login-button",
   "author": "appigram, caffeinum",
   "license": "MIT",

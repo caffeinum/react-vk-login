@@ -10,6 +10,7 @@ export default class VKLogin extends React.Component {
   static propTypes = {
     clientId: PropTypes.string,
     callback: PropTypes.func.isRequired,
+    render: PropTypes.func,
     className: PropTypes.string,
     text: PropTypes.node,
     scope: PropTypes.arrayOf(PropTypes.string),
@@ -43,9 +44,13 @@ export default class VKLogin extends React.Component {
   render() {
     return (
       <span style={{transition: 'opacity 0.5s'}}>
-        <button className={this.props.cssClass} onClick={this.start}>
-          {this.props.text}
-        </button>
+        {this.props.render ? (
+          render({ onClick: this.start, ...this.props })
+        ) : (
+          <button className={this.props.cssClass} onClick={this.start}>
+            {this.props.text}
+          </button>
+        )}
       </span>
     );
   }

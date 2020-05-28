@@ -2,9 +2,9 @@
   "name": "react-vk-login-button",
   "version": "1.0.3",
   "description": "React VK Login button",
-  "repository": "https://github.com/appigram/react-vk-login",
-  "author": "appigram",
   "main": "./src/index.js",
+  "repository": "https://github.com/caffeinum/react-vk-login-button",
+  "author": "appigram, caffeinum",
   "license": "MIT",
   "scripts": {
     "build": "babel ./src --out-dir ./lib",
@@ -35,12 +35,12 @@
     "babel-preset-stage-2": "^6.24.1",
     "eslint": ">=4.4.0",
     "jest-cli": "^20.0.4",
+    "prop-types": "^15.7.2",
     "standard": "*"
   },
   "peerDependencies": {
     "react": "^15.4.1"
   },
   "dependencies": {
-    "prop-types": "^15.7.2"
   }
 }

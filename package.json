@@ -1,6 +1,6 @@
 {
   "name": "react-vk-login-button",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React VK Login button",
   "main": "./src/index.js",
   "repository": "https://github.com/caffeinum/react-vk-login-button",

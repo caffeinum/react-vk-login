@@ -1,21 +1,20 @@
 # React VK Login Button
 
+The code was adapted from https://github.com/appigram/react-vk-login.
+
+It's updated for the last React version.
+
 ```sh
-react-vk-login
+npm i react-vk-login-button
 ```
 
 ```js
 import React from 'react'
-import VKLogin from 'react-vk-login'
-import styles from './styles.css'
+import VKLogin from 'react-vk-login-button'
 
 export default class LoginWithVK extends React.Component {
 
-  static propTypes = {
-
-  }
-
-  callbackVK = ({code, redirectUri}) => {
+  callbackVK = ({ code, redirectUri }) => {
     // Login with vk
   }
 
@@ -24,8 +23,11 @@ export default class LoginWithVK extends React.Component {
       <VKLogin
         clientId='xxx'
         callback={this.callbackVK}
-        className={styles.vk}
-        text='VK'
+        render={renderProps => (
+          <button onClick={renderProps.onClick}>
+            Login with VK
+          </button>
+        )}
       />
     )
   }

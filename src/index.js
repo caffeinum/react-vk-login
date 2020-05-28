@@ -45,7 +45,7 @@ export default class VKLogin extends React.Component {
     return (
       <span style={{transition: 'opacity 0.5s'}}>
         {this.props.render ? (
-          render({ onClick: this.start, ...this.props })
+          this.props.render({ onClick: this.start, ...this.props })
         ) : (
           <button className={this.props.cssClass} onClick={this.start}>
             {this.props.text}

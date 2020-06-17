@@ -24,9 +24,10 @@ export default class VKLogin extends React.Component {
     const state = Math.random().toString(36).substring(7);
     const clientId = this.props.clientId;
     const scope = this.props.scope;
+    const responseType = this.props.responseType;
     localStorage.vkReactLogin = state;
     localStorage.vkReactLoginRedirectUri = window.location.href;
-    window.location.href = getURL({ clientId, state, scope });
+    window.location.href = getURL({ clientId, state, scope, responseType });
   };
 
   restart = () => {

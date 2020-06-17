@@ -1,6 +1,6 @@
 {
   "name": "react-vk-login-button",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "React VK Login button",
   "main": "./lib",
   "repository": "https://github.com/caffeinum/react-vk-login-button",
@@ -39,7 +39,7 @@
     "standard": "*"
   },
   "peerDependencies": {
-    "react": "^15.4.1"
+    "react": "^16.0.0"
   },
   "dependencies": {}
 }
